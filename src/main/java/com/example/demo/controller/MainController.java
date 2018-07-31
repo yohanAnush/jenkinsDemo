@@ -27,6 +27,6 @@ public class MainController {
 			user = reqParams.get("user");
 		}
 		
-		return new ResponseEntity<>("Hello, " + user + "!", HttpStatus.OK);
+		return new ResponseEntity<>("Hello, " + user + "! This is running on an EC2 instance", HttpStatus.OK);
     }
 }
