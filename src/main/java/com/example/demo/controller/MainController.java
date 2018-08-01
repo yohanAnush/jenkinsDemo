@@ -32,6 +32,6 @@ public class MainController {
 	
 	@RequestMapping("department")
 	public ResponseEntity<String> getAllDepartments() {
-		return new ResponseEntity<>("Enter department id in the API call", HttpStatus.BAD_REQUEST);
+		return new ResponseEntity<>("Enter department id in the API call!", HttpStatus.BAD_REQUEST);
 	}
 }
