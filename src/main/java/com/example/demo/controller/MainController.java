@@ -29,4 +29,9 @@ public class MainController {
 		
 		return new ResponseEntity<>("Hello, " + user + "! This is running on an EC2 instance", HttpStatus.OK);
     }
+	
+	@RequestMapping("department")
+	public ResponseEntity<String> getAllDepartments() {
+		return new ResponseEntity<>("Enter department id in the API call", HttpStatus.BAD_REQUEST);
+	}
 }
